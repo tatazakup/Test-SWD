@@ -1,0 +1,128 @@
+@import "utility";
+@import "variable";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  text-align: center;
+  background: rgb(110, 218, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(110, 218, 120, 1) 0%,
+    rgba(255, 162, 0, 1) 100%
+  );
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  top: 10px;
+  left: 10px;
+}
+
+.language {
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-center {
+  min-width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ant-card.card-link {
+  cursor: pointer;
+}
+
+.ant-btn {
+  &.style1 {
+    background: white;
+    margin-bottom: 30px;
+
+    &:hover:not(:disabled) {
+      border-color: orange;
+      background-color: orange;
+    }
+
+    & .label-button {
+      border: 1px solid green;
+      border-radius: $border-radius;
+      background-color: green;
+      color: white;
+      width: 20ch;
+      margin: auto;
+      margin-top: -5px;
+    }
+  }
+}
+
+.trapezoid {
+  border-bottom: 80px solid gray;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 70%;
+  margin: auto;
+}
+
+.square {
+  border: 1px solid gray;
+  background-color: gray;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+.rectangle {
+  background-color: gray;
+  height: 50%;
+  width: 70%;
+  margin: auto;
+}
+
+.parallelogram {
+  width: 70%;
+  height: 50%;
+  transform: skew(20deg);
+  background: gray;
+  margin: auto;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ellipse {
+  height: 30%;
+  width: 75%;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
